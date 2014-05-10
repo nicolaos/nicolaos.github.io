@@ -1,0 +1,100 @@
+var curriculum = {
+     "firstName": "Nicolò",
+     "lastName": "Calzavara",
+     "gender": "M",
+     "dob":"27/07/1986",
+     "email":"nicolaos27@gmail.com",
+     "phoneNumber": [
+                { "type": "home", "number": "" },
+                { "type": "mobile", "number": "" }
+     ],
+     "summary_personal": "I am an active and sportif young professional, seeking a career that fits my professional skills and interests.",
+     "summary_funny":"Hey look buddy, I'm an Engineer. That means I solve impossible problems.",
+     "summary_funny_label":"A funny motto that somewhat describes me: ",
+     "education_list" : [
+            {   "ed_title": "Universita' degli studi di Padova",
+                "ed_course": "Esame di stato di abilitazione alla professione di Ingegnere",
+                "ed_location": "Padova",
+                "ed_inizio":"01/2012",
+                "ed_fine":"",
+                "ed_grade":""
+            },
+            {   "ed_title": "Universita' degli studi di Padova",
+                "ed_course": "Laurea Magistrale in Ingegneria Informatica",
+                "ed_location": "Padova",
+                "ed_inizio":"09/2008",
+                "ed_fine":"03/2011",
+                "ed_grade":""
+            },
+            {   "ed_title": "Universita' degli studi di Padova",
+                "ed_course": "Laurea triennale in Ingegneria Informatica",
+                "ed_location": "Padova",
+                "ed_inizio":"09/2005",
+                "ed_fine":"09/2008",
+                "ed_grade":""
+            },
+            {   "ed_title": "I.I.S. Newton",
+                "ed_course": "Liceo Scientifico PNI",
+                "ed_location": "Camposampiero",
+                "ed_inizio":"09/2000",
+                "ed_fine":"07/2005",
+                "ed_grade":""
+            }
+     ],
+     "grade_label": "",
+     "office_skills": "Engineer attitude of trying to solve problems that appear to be impossible.",
+     "summary_prof":"3 year experience in the IT, web technologies, services maintainance and data manipulation.",
+     "skills":[
+        "High-End Application Software: J2EE",
+        "Languages: Java, J2EE, Javascript, Ruby, Perl",
+        "Frameworks: Hibernate, JPA, XML, JSON",
+        "Tools: eclipse, MAVEN, Ant, UML, ER-Diagram, jBPM"
+     ],
+     "technologies":"Java, Eclipse, HTML, SQL, Ruby on Rails, Ruby, MySQL, JBoss, J2EE, XML, Struts, jQuery, JavaScript, Maven2, EJB3, Ant, JUnit, CSS, Perl, Sybase, Stored Procedures, XML-RPC, JPA, Web Services, Git, EGit, CVS, XMLBeans, Jenkins, AngularJS, Sinatra, Nokogiri, JSON, Google Maps API, Rake, Bootstrap, HAML, SQLite, Devise, Android.",
+     "experience_list":[
+        {
+            "name":"Previnet S.p.A.",
+            "start":"09/2013",
+            "end":"oggi",
+            "location":"Via E. Forlanini, 24 - 31022 Preganziol (TV)",
+            "type":"development",
+            "role":"Sviluppatore",
+            "details":"Analisi, progettazione e gestione di processi automatici e interattivi per la manipolazione, trasmissione, il controllo dei dati.",
+            "environment":"Perl, SQL, Sybase, Java, Jboss AS"
+        },
+        {
+            "name":"Infocamere s.c.p.a.",
+            "start":"09/2011",
+            "end":"09/2013",
+            "location": "Sede legale: Via G. B. Morgagni, 13 - 00161 Roma",
+            "role":"J2EE DEVELOPER",
+            "details":"Supporto allo sviluppo di applicazioni web per la gestione, validazione, controllo di dati legati al sistema camerale.",
+            "environment":"JbossAS, Struts 2, EJB, JPA."
+        },
+        {
+            "name":"IKS s.r.l.",
+            "start":"06/2011",
+            "end":"today",
+            "location":"Padova: C.so Stati Uniti, 14 bis - 35127",
+            "type":"development",
+            "role":"Sviluppatore",
+            "details":"Sviluppo di Applicazioni Enterprise J2EE. Utilizzo di application server Jboss. Front-end con framework Struts 2. Back-end con Enterprise Java Beans e JPA.",
+            "environment":"Jboss AS, JAXB, Oracle, Hibernate"
+        },
+        {
+            "name":"Ne-t by Telerete Nordest s.r.l.",
+            "start":"06/2011",
+            "end":"today",
+            "location":"Via Salboro 22/b - 35124 Padova (PD)",
+            "type":"development",
+            "role":"Sviluppatore",
+            "details":"Analisi e sviluppo di applicazioni per smartphone multipiattaforma tramite il framework Phonegap. Realizzazione di pagine web dinamiche e interattive utilizzando le callback di Phonegap. Programmazione di applicazioni per i sistemi operativi Symbian, Blackberry, Android. Realizzazione di un'applicazione demo per Android e Blackberry per la vendita di biglietti del tram tramite SMS.",
+            "environment":"Perl, SQL, Sybase, Java, Jboss AS"
+        }
+     ],
+     "hobbies": [ "tecnologie web", "snowboard", "palestra", "ciclismo", "piscina",  "tennis"
+     ],
+
+     "photo_path": "img/nicolaosc.png",
+     "alt_photo": "Photo of Calzavara Nicolò"
+};

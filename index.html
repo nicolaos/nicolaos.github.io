@@ -82,12 +82,26 @@
             
             <dt>Experience</dt>
             <dd ng-repeat="esp in curriculum.experience_list">
-                <h2>{{esp.name}}<span>{{esp.location}}</span></h2>
-                <ul>
-                    <li>{{esp.details}}</li>
-                    <li>{{esp.role}}</li>
-                    <li>{{esp.environment}}</li>
-                </ul> 
+                <accordion>
+                    <accordion-group >
+                        <accordion-heading>
+                            <h2>{{esp.name}}<span>{{esp.location}}</span></h2>
+                            <ul>
+                                <li>{{esp.details}}</li>
+                                <li>{{esp.role}}</li>
+                                <li>{{esp.environment}}</li>
+                            </ul>
+                        </accordion-heading>
+
+                        <div ng-repeat="project in esp.projects">
+                            <h3>{{project.name}}<span>{{project.type}}</span></h3>
+                            <ul>
+                                <li ng-show="project.desc">{{project.desc}}</li>
+                                <li>{{project.technologies}}</li>
+                            </ul>
+                        </div>
+                    </accordion-group>
+                </accordion>
             </dd>
             
             <dd class="clear"></dd>

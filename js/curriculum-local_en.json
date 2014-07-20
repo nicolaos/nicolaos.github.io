@@ -59,8 +59,8 @@ var curriculum = {
             "location":"Via E. Forlanini, 24 - 31022 Preganziol (TV)",
             "type":"development",
             "role":"Sviluppatore",
-            "details":"Analisi, progettazione e gestione di processi automatici e interattivi per la manipolazione, trasmissione, il controllo dei dati.",
-            "environment":"Perl, SQL, Sybase, Java, Jboss AS"
+            "details":"Analisi, progettazione e gestione di processi automatici e interattivi per la manipolazione, trasmissione, il controllo dei dati previdenziali.",
+            "environment":"Perl, SQL, Sybase, Java, Jboss AS, AngularJS"
         },
         {
             "name":"Infocamere s.c.p.a.",

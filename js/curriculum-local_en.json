@@ -53,6 +53,16 @@ var curriculum = {
      "technologies":"Java, Eclipse, HTML, SQL, Ruby on Rails, Ruby, MySQL, JBoss, J2EE, XML, Struts, jQuery, JavaScript, Maven2, EJB3, Ant, JUnit, CSS, Perl, Sybase, Stored Procedures, XML-RPC, JPA, Web Services, Git, EGit, CVS, XMLBeans, Jenkins, AngularJS, Sinatra, Nokogiri, JSON, Google Maps API, Rake, Bootstrap, HAML, SQLite, Devise, Android.",
      "experience_list":[
         {
+           "name":"Aziende del gruppo: Ali s.p.a., Repas Lunch Coupon, Compagnia Dei Salari.",
+           "start":"11/2014",
+           "end":"oggi",
+           "location":"Via del Viminale, 43 - 00184 Roma",
+           "type":"development",
+           "role":"Sviluppatore, Operatore IT",
+           "details":".",
+           "environment":"Debian, Ruby on Rails, Mysql, Oracle"
+        },
+        {
             "name":"Previnet S.p.A.",
             "start":"09/2013",
             "end":"oggi",

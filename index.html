@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
 
-<title>Curriculum Vitae Calzavara Nicolo'</title> 
+<title>Curriculum Vitae Calzavara Nicolo'</title>
 <link rel="stylesheet" type="text/css" href="css/vendors/bootstrap/3.1.1/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 
@@ -24,15 +24,15 @@
 <body ng-app="mainApp" style="padding-top:20px;">
 
     <div id="page-wrap" ng-controller="mainController" ng-cloak>
-    
+
         <img ng-src="{{curriculum.photo_path}}" height="220px" alt="{{curriculum.alt_photo}}" id="pic" />
-    
+
         <div id="contact-info" class="vcard">
-        
+
             <h1 class="fn">{{curriculum.lastName}} {{curriculum.firstName}}</h1>
             <p ng-show="curriculum.address">Where you can find me:<br/> {{curriculum.address.via}}. {{curriculum.address.city}} <br/>{{curriculum.address.cap}} - {{curriculum.address.provincia}}
             </p>
-            <p>Socials: </p>
+            <!-- <p>Socials: </p> -->
             <p>
                 <a href="http://www.twitter.com/nicolaosc" class="sb min twitter">Twitter</a>
                 <a href="http://www.facebook.com/nicolaos.calzavara" class="sb min facebook">Facebook</a>
@@ -50,36 +50,35 @@
             <p>{{curriculum.summary_prof}}</p>
             <p>{{curriculum.summary_funny_label}}<span>"{{curriculum.summary_funny}}"</span></p>
         </div>
-        
+
         <div class="clear"></div>
-        
+
         <dl>
             <dd class="clear"></dd>
-            
+
             <dt>Education</dt>
             <dd ng-repeat="educazione in curriculum.education_list" >
                 <h2>{{educazione.ed_title}}</h2>
                 <p> {{educazione.ed_course}}
                 <br/>
-                    {{educazione.ed_location}} - 
+                    {{educazione.ed_location}} -
                 <strong>{{educazione.ed_inizio}} - {{educazione.ed_fine}}</strong>
                 &nbsp;
                 <!-- <br/> -->
                    {{curriculum.grade_label}}{{educazione.ed_grade}}
                 </p>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Skills</dt>
             <dd>
                 <h2>Office skills</h2>
                 <p>{{curriculum.office_skills}}</p>
-                
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Experience</dt>
             <dd ng-repeat="esp in curriculum.experience_list">
                 <accordion>
@@ -103,22 +102,22 @@
                     </accordion-group>
                 </accordion>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>Hobbies</dt>
             <dd>
                 <li ng-repeat="hobby in curriculum.hobbies">{{hobby}}</li>
             </dd>
-            
+
             <dd class="clear"></dd>
-            
+
             <dt>References</dt>
             <dd>See likedin reccomendations</dd>
-            
+
             <dd class="clear"></dd>
         </dl>
-        
+
         <div class="clear"></div>
 
 </div>

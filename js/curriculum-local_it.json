@@ -8,9 +8,9 @@ var curriculum = {
                 { "type": "home", "number": "" },
                 { "type": "mobile", "number": "" }
      ],
-     "summary_personal": "Sono un attivo e giovane professionista, cerco una carriera che incontri i miei interessi e le mie abilita'.",
-     "summary_funny":"Hey, sono un Ingegnere. Significa che posso risolvere problemi impossibili.",
-     "summary_funny_label":"Un motto divertente che mi descrive: ",
+     "summary_personal": "Sono un attivo professionista, cerco una carriera che incontri i miei interessi e le mie abilita'.",
+     "summary_funny":"Con l'allenamento si riescono a fare cose impensabili.",
+     "summary_funny_label":"Un motto che mi descrive: ",
      "education_list" : [
             {   "ed_title": "Universita' degli studi di Padova",
                 "ed_course": "Esame di stato di abilitazione alla professione di Ingegnere",
@@ -42,8 +42,8 @@ var curriculum = {
             }
      ],
      "grade_label": "",
-     "office_skills": "Attitudine a cercare di risolvere problemi che sembrano impossibili.",
-     "summary_prof":"3 anni di esperienza in ambito IT, tecnologie web, manutenzione di servizi e manipolazione di dati.",
+     "office_skills": "Organizzazione e coordinamento del proprio lavoro e dei collaboratori. Attitudine a cercare di trovare una soluzione efficace ai problemi.",
+     "summary_prof": "5 anni di esperienza in ambito IT, tecnologie web, manutenzione di servizi e manipolazione di dati.",
      "skills":[
         "High-End Application Software: J2EE",
         "Languages: Java, J2EE, Javascript, Ruby, Perl",
@@ -52,29 +52,53 @@ var curriculum = {
      ],
      "technologies":"Java, Eclipse, HTML, SQL, Ruby on Rails, Ruby, MySQL, JBoss, J2EE, XML, Struts, jQuery, JavaScript, Maven2, EJB3, Ant, JUnit, CSS, Perl, Sybase, Stored Procedures, XML-RPC, JPA, Web Services, Git, EGit, CVS, XMLBeans, Jenkins, AngularJS, Sinatra, Nokogiri, JSON, Google Maps API, Rake, Bootstrap, HAML, SQLite, Devise, Android.",
      "experience_list":[
+         {
+             "name":"Aziende del gruppo: Ali s.p.a., Repas Lunch Coupon, Compagnia Dei Salari.",
+             "start":"11/2014",
+             "end":"oggi",
+             "location":"Via del Viminale, 43 - 00184 Roma",
+             "type":"development",
+             "role":"Sviluppatore, Operatore IT",
+             "details":"Manutenzione del crm aziendale per la gestione candidati, report, documenti e utenze. Analisi, progettazione e migrazione a un nuovo crm per la gestione dei convenzionati.",
+             "environment":"Debian, Ruby on Rails, Mysql, Oracle",
+             "projects": [
+                 {
+                     "name": "servizi commerciali convenzionamento",
+                     "type": "web application",
+                     "desc": "Crm gestione convenzionati, gestione flusso documenti di convenzionamento",
+                     "technologies": "Ruby on rails, Mysql"
+                 },
+                 {
+                     "name": "crm aziendale",
+                     "type": "web application",
+                     "desc": "Gestione curricula, documenti, utenze, crm aziende",
+                     "technologies": "Ruby on rails, Mysql, Sphinx"
+                 }
+             ]
+         },
         {
             "name":"Previnet S.p.A.",
             "start":"09/2013",
-            "end":"oggi",
+            "end":"11/2014",
             "location":"Via E. Forlanini, 24 - 31022 Preganziol (TV)",
             "type":"development",
             "role":"Sviluppatore",
             "details":"Analisi, progettazione e gestione di processi automatici e interattivi per la manipolazione, trasmissione, il controllo dei dati.",
             "environment":"Perl, SQL, Sybase, Java, Jboss AS",
             "projects": [
-                { 
+                {
                     "name": "servizi polizze",
                     "type": "script/process management",
                     "desc": "",
-                    "technologies": "perl, IPAS, SQL, Sybase, StoredProcedures"
+                    "technologies": "Perl, IPAS, SQL, Sybase, StoredProcedures"
                 },
-                { 
+                {
                     "name": "portale Gate",
                     "type": "Front-end portafoglio polizze cliente",
                     "desc": "",
                     "technologies": "JEE, SQL, Postgresql, StoredProcedures"
-                },  
-                { 
+                },
+                {
                     "name": "Rbm salute portale preventivi",
                     "type": "AngularJS SinglePageApplication",
                     "desc": "",
@@ -91,13 +115,13 @@ var curriculum = {
             "details":"Supporto allo sviluppo di applicazioni web per la gestione, validazione, controllo di dati legati al sistema camerale.",
             "environment":"JbossAS, Struts 2, EJB, JPA.",
             "projects": [
-                { 
+                {
                     "name": "wscu",
                     "type": "webservice",
                     "desc": "",
                     "technologies": "maven, JEE, axis2, axis, JbossAS 5"
                 },
-                { 
+                {
                     "name": "starcheck",
                     "type": "library, web interface",
                     "desc": "",
@@ -129,15 +153,15 @@ var curriculum = {
             "type":"development",
             "role":"Sviluppatore",
             "details":"Analisi e sviluppo di applicazioni per smartphone multipiattaforma tramite il framework Phonegap. Realizzazione di pagine web dinamiche e interattive utilizzando le API di Phonegap. Programmazione di applicazioni per i sistemi operativi Symbian, Blackberry, Android. Realizzazione di un'applicazione demo per Android e Blackberry per la vendita di biglietti del tram tramite SMS.",
-            "environment":"Perl, SQL, Sybase, Java, Jboss AS",
+            "environment":"Javascript, Html, Java, Tomcat",
             "projects": [
-                { 
+                {
                     "name": "phonegap",
                     "type": "framework mobile app",
                     "desc": "",
                     "technologies": "phonegap, HTML, CSS, JavaScript"
                 },
-                { 
+                {
                     "name": "android",
                     "type": "Native App",
                     "desc": "",
@@ -146,7 +170,7 @@ var curriculum = {
             ]
         }
      ],
-     "hobbies": [ "tecnologie web", "calcetto", "snowboard", "palestra", "ciclismo", "piscina",  "tennis"
+     "hobbies": [ "tecnologie web", "sci", "triathlon", "ciclismo", "piscina"
      ],
 
      "photo_path": "img/nicolaosc.png",

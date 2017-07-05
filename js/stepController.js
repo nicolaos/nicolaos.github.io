@@ -1,6 +1,6 @@
-var acquistoPolizzaApp = angular.module('acquistoPolizzaApp', ['ngRoute'] );
+var stepNavigatorApp = angular.module('stepNavigatorApp', ['ngRoute'] );
 
-var acquistoPolizzaController=acquistoPolizzaApp.controller("acquistoPolizzaController",function($scope,$location) {
+var stepNavigatorController=stepNavigatorApp.controller("stepNavigatorController",function($scope,$location) {
 	
 	$scope.goToStep1=function() {
 		$location.path("/step1");		
@@ -17,20 +17,20 @@ var acquistoPolizzaController=acquistoPolizzaApp.controller("acquistoPolizzaCont
 });
 
 
-acquistoPolizzaApp.config(['$routeProvider',
+stepNavigatorApp.config(['$routeProvider',
    function($routeProvider) {
 	$routeProvider
 	.when('/step1', {
-		templateUrl : 'partials/acquistopolizza/step1.html',
-		controller : 'acquistoPolizzaController'
+		templateUrl : 'partials/stepnavigator/step1.html',
+		controller : 'stepNavigatorController'
 	})
 	.when('/step2', {
-		templateUrl : 'partials/acquistopolizza/step2.html',
-		controller : 'acquistoPolizzaController'
+		templateUrl : 'partials/stepnavigator/step2.html',
+		controller : 'stepNavigatorController'
 	})
 	.when('/step3', {
-		templateUrl : 'partials/acquistopolizza/step3.html',
-		controller : 'acquistoPolizzaController'
+		templateUrl : 'partials/stepnavigator/step3.html',
+		controller : 'stepNavigatorController'
 	})
 	.otherwise({
 		redirectTo : '/step1'

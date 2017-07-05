@@ -9,8 +9,8 @@ var curriculum = {
                 { "type": "mobile", "number": "" }
      ],
      "summary_personal": "I am an active and sportif young professional, seeking a career that fits my professional skills and interests.",
-     "summary_funny":"Hey look buddy, I'm an Engineer. That means I solve impossible problems.",
-     "summary_funny_label":"A funny motto that somewhat describes me: ",
+     "summary_funny":"With training you can reach unthinkable goals.",
+     "summary_funny_label":"A motto that somewhat describes me: ",
      "education_list" : [
             {   "ed_title": "Universita' degli studi di Padova",
                 "ed_course": "Esame di stato di abilitazione alla professione di Ingegnere",
@@ -43,7 +43,7 @@ var curriculum = {
      ],
      "grade_label": "",
      "office_skills": "Engineer attitude of trying to solve problems that appear to be impossible.",
-     "summary_prof":"3 year experience in the IT, web technologies, services maintainance and data manipulation.",
+     "summary_prof":"6 year experience in the IT, web technologies, services maintainance and data manipulation.",
      "skills":[
         "High-End Application Software: J2EE",
         "Languages: Java, J2EE, Javascript, Ruby, Perl",

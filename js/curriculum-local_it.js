@@ -43,7 +43,7 @@ var curriculum = {
      ],
      "grade_label": "",
      "office_skills": "Organizzazione e coordinamento del proprio lavoro e dei collaboratori. Attitudine a cercare di trovare una soluzione efficace ai problemi.",
-     "summary_prof": "6 anni di esperienza in ambito IT, tecnologie web, manutenzione di servizi e manipolazione di dati.",
+     "summary_prof": "Diffusa esperienza in ambito IT, tecnologie web, manutenzione di servizi e manipolazione di dati.",
      "skills":[
         "High-End Application Software: J2EE",
         "Languages: Java, J2EE, Javascript, Ruby, Perl",
@@ -53,9 +53,33 @@ var curriculum = {
      "technologies":"Java, Eclipse, HTML, SQL, Ruby on Rails, Ruby, MySQL, JBoss, J2EE, XML, Struts, jQuery, JavaScript, Maven2, EJB3, Ant, JUnit, CSS, Perl, Sybase, Stored Procedures, XML-RPC, JPA, Web Services, Git, EGit, CVS, XMLBeans, Jenkins, AngularJS, Sinatra, Nokogiri, JSON, Google Maps API, Rake, Bootstrap, HAML, SQLite, Devise, Android.",
      "experience_list":[
          {
+             "name":"Previnet S.p.A.",
+             "start":"01/2018",
+             "end":"oggi",
+             "location":"Via E. Forlanini, 24 - 31022 Preganziol (TV)",
+             "type":"development",
+             "role":"Sviluppatore",
+             "details":"Sviluppo e gestione di funzionalità e processi sul portale clienti per la gestione del postvendita di polizze.",
+             "environment":"Perl, SQL, Sybase, Java, Jboss AS",
+             "projects": [
+                 {
+                     "name": "servizi polizze",
+                     "type": "script/process management",
+                     "desc": "",
+                     "technologies": "Perl, IPAS, SQL, Sybase, StoredProcedures"
+                 },
+                 {
+                     "name": "Portale di gestione polizze per agenzie/banche",
+                     "type": "AngularJS SinglePageApplication",
+                     "desc": "",
+                     "technologies": "AngularJS, JSON, JEE, Wildfly 11+, Hibernate"
+                 }
+             ]
+         },
+         {
              "name":"Aziende del gruppo: Ali s.p.a., Repas Lunch Coupon, Compagnia Dei Salari.",
              "start":"11/2014",
-             "end":"oggi",
+             "end":"01/2018",
              "location":"Via del Viminale, 43 - 00184 Roma",
              "type":"development",
              "role":"Sviluppatore, Operatore IT",
@@ -173,6 +197,6 @@ var curriculum = {
      "hobbies": [ "tecnologie web", "sci", "triathlon", "ciclismo", "piscina"
      ],
 
-     "photo_path": "img/nicolaosc.png",
+     "photo_path": "img/avatar.png",
      "alt_photo": "Photo of Calzavara Nicolò"
 };

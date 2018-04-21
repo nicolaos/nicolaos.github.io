@@ -13,10 +13,9 @@
 <script type="text/javascript" src="js/vendors/angular/1.2.16/angular-sanitize.min.js"></script>
 <script type="text/javascript" src="js/vendors/angular-ui/0.10.0/ui-bootstrap-tpls-0.11.0.min.js"></script>
 <script type="text/javascript" src="js/vendors/webfont/1.5.2/webfont.min.js"></script>
-<script type="text/javascript" src="js/curriculum-local_it.json"></script>
+<script type="text/javascript" src="js/curriculum-local_it.js"></script>
 
 <script type="text/javascript" src="js/mainHttp.js"></script>
-<script type="text/javascript" src="js/mainService.js"></script>
 <script type="text/javascript" src="js/mainController.js"></script>
 
 </head>
@@ -34,13 +33,11 @@
             </p>
             <!-- <p>Socials: </p> -->
             <p>
-                <a href="http://www.twitter.com/nicolaosc" class="sb min twitter">Twitter</a>
-                <a href="http://www.facebook.com/nicolaos.calzavara" class="sb min facebook">Facebook</a>
-                <a href="http://www.linkedin.com/pub/nicol%C3%B2-calzavara/42/a45/451" class="sb min linkedin">LinkedIn</a>
-                <a href="http://github.com/nicolaos" class="sb min github">Github</a>
+                <a href="http://www.twitter.com/nicolaosc" class="sb min twitter" target="_blank">Twitter</a>
+                <a href="http://www.linkedin.com/pub/nicol%C3%B2-calzavara/42/a45/451" class="sb min linkedin" target="_blank">LinkedIn</a>
+                <a href="http://github.com/nicolaos" class="sb min github" target="_blank">Github</a>
             </p>
             <p>
-                <!-- Cell: <span class="tel">{{curriculum.phoneNumber[1].number}}</span><br /> -->
                 Email: <a class="email" href="mailto:{{curriculum.email}}">{{curriculum.email}}</a>
             </p>
         </div>
@@ -109,11 +106,6 @@
             <dd>
                 <li ng-repeat="hobby in curriculum.hobbies">{{hobby}}</li>
             </dd>
-
-            <dd class="clear"></dd>
-
-            <dt>References</dt>
-            <dd>See likedin reccomendations</dd>
 
             <dd class="clear"></dd>
         </dl>

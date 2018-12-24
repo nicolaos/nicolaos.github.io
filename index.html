@@ -1,118 +1,714 @@
-<!DOCTYPE HTML>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta http-equiv=“X-UA-Compatible” content=“IE=edge” />
+<!doctype html>
+<html class="no-js" lang="en">
 
-<title>Curriculum Vitae Calzavara Nicolo'</title>
-<link rel="stylesheet" type="text/css" href="css/vendors/bootstrap/3.1.1/bootstrap.min.css">
-<link rel="stylesheet" type="text/css" href="css/main.css">
+    <head>
+        <!-- meta data -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-<script type="text/javascript" src="js/vendors/angular/1.2.16/angular.js"></script>
-<script type="text/javascript" src="js/vendors/angular/1.2.16/angular-resource.min.js"></script>
-<script type="text/javascript" src="js/vendors/angular/1.2.16/angular-sanitize.min.js"></script>
-<script type="text/javascript" src="js/vendors/angular-ui/0.10.0/ui-bootstrap-tpls-0.11.0.min.js"></script>
-<script type="text/javascript" src="js/vendors/webfont/1.5.2/webfont.min.js"></script>
-<script type="text/javascript" src="js/curriculum-local_it.js"></script>
+        <!--font-family-->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;subset=devanagari,latin-ext" rel="stylesheet">
 
-<script type="text/javascript" src="js/mainHttp.js"></script>
-<script type="text/javascript" src="js/mainController.js"></script>
+        <!-- title of site -->
+        <title>About @nicolaosc</title>
 
-</head>
+        <!-- For favicon png -->
+		<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png"/>
 
-<body ng-app="mainApp" style="padding-top:20px;">
+        <!--font-awesome.min.css-->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
 
-    <div id="page-wrap" ng-controller="mainController" ng-cloak>
+		<!--flat icon css-->
+		<link rel="stylesheet" href="assets/css/flaticon.css">
 
-        <img ng-src="{{curriculum.photo_path}}" height="220px" alt="{{curriculum.alt_photo}}" id="pic" />
+		<!--animate.css-->
+        <link rel="stylesheet" href="assets/css/animate.css">
 
-        <div id="contact-info" class="vcard">
+        <!--owl.carousel.css-->
+        <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+		<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 
-            <h1 class="fn">{{curriculum.lastName}} {{curriculum.firstName}}</h1>
-            <p ng-show="curriculum.address">Where you can find me:<br/> {{curriculum.address.via}}. {{curriculum.address.city}} <br/>{{curriculum.address.cap}} - {{curriculum.address.provincia}}
-            </p>
-            <!-- <p>Socials: </p> -->
-            <p>
-                <a href="http://www.twitter.com/nicolaosc" class="sb min twitter" target="_blank">Twitter</a>
-                <a href="http://www.linkedin.com/pub/nicol%C3%B2-calzavara/42/a45/451" class="sb min linkedin" target="_blank">LinkedIn</a>
-                <a href="http://github.com/nicolaos" class="sb min github" target="_blank">Github</a>
-            </p>
-            <p>
-                Email: <a class="email" href="mailto:{{curriculum.email}}">{{curriculum.email}}</a>
-            </p>
-        </div>
+        <!--bootstrap.min.css-->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-        <div id="objective">
-            <p>{{curriculum.summary_personal}}</p>
-            <p>{{curriculum.summary_prof}}</p>
-            <p>{{curriculum.summary_funny_label}}<span>"{{curriculum.summary_funny}}"</span></p>
-        </div>
+		<!-- bootsnav -->
+		<link rel="stylesheet" href="assets/css/bootsnav.css" >
 
-        <div class="clear"></div>
+        <!--style.css-->
+        <link rel="stylesheet" href="assets/css/style.css">
 
-        <dl>
-            <dd class="clear"></dd>
+        <!--responsive.css-->
+        <link rel="stylesheet" href="assets/css/responsive.css">
 
-            <dt>Education</dt>
-            <dd ng-repeat="educazione in curriculum.education_list" >
-                <h2>{{educazione.ed_title}}</h2>
-                <p> {{educazione.ed_course}}
-                <br/>
-                    {{educazione.ed_location}} -
-                <strong>{{educazione.ed_inizio}} - {{educazione.ed_fine}}</strong>
-                &nbsp;
-                <!-- <br/> -->
-                   {{curriculum.grade_label}}{{educazione.ed_grade}}
-                </p>
-            </dd>
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 
-            <dd class="clear"></dd>
+        <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
 
-            <dt>Skills</dt>
-            <dd>
-                <h2>Office skills</h2>
-                <p>{{curriculum.office_skills}}</p>
-            </dd>
+    </head>
 
-            <dd class="clear"></dd>
+	<body>
+		<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
 
-            <dt>Experience</dt>
-            <dd ng-repeat="esp in curriculum.experience_list">
-                <accordion>
-                    <accordion-group >
-                        <accordion-heading>
-                            <h2>{{esp.name}}<span>{{esp.location}}</span></h2>
-                            <ul>
-                                <li>{{esp.details}}</li>
-                                <li>{{esp.role}}</li>
-                                <li>{{esp.environment}}</li>
-                            </ul>
-                        </accordion-heading>
+		<!-- top-area Start -->
+		<header class="top-area">
+			<div class="header-area">
+				<!-- Start Navigation -->
+			    <nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-                        <div ng-repeat="project in esp.projects">
-                            <h3>{{project.name}}<span>{{project.type}}</span></h3>
-                            <ul>
-                                <li ng-show="project.desc">{{project.desc}}</li>
-                                <li>{{project.technologies}}</li>
-                            </ul>
-                        </div>
-                    </accordion-group>
-                </accordion>
-            </dd>
+			        <div class="container">
 
-            <dd class="clear"></dd>
+			            <!-- Start Header Navigation -->
+			            <div class="navbar-header">
+			                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+			                    <i class="fa fa-bars"></i>
+			                </button>
+			                <a class="navbar-brand" href="index.html">Nicolaosc</a>
+			            </div><!--/.navbar-header-->
+			            <!-- End Header Navigation -->
 
-            <dt>Hobbies</dt>
-            <dd>
-                <li ng-repeat="hobby in curriculum.hobbies">{{hobby}}</li>
-            </dd>
+			            <!-- Collect the nav links, forms, and other content for toggling -->
+			            <div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+			                <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+			                <li class=" smooth-menu active"></li>
+			                    <li class=" smooth-menu"><a href="#education">education</a></li>
+			                    <li class="smooth-menu"><a href="#skills">skills</a></li>
+			                    <li class="smooth-menu"><a href="#experience">experience</a></li>
+			                    <li class="smooth-menu"><a href="#contact">contact</a></li>
+			                </ul><!--/.nav -->
+			            </div><!-- /.navbar-collapse -->
+			        </div><!--/.container-->
+			    </nav><!--/nav-->
+			    <!-- End Navigation -->
+			</div><!--/.header-area-->
 
-            <dd class="clear"></dd>
-        </dl>
+		    <div class="clearfix"></div>
 
-        <div class="clear"></div>
+		</header><!-- /.top-area-->
+		<!-- top-area End -->
 
-</div>
+		<!--welcome-hero start -->
+		<section id="welcome-hero" class="welcome-hero">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<div class="header-text">
+							<h2>hi <span>,</span><br> i am <br> Calzavara <br> Nicolò <span>.</span>   </h2>
+							<p>software developer</p>
+							<!-- <a href="assets/" download>download resume</a> -->
+						</div><!--/.header-text-->
+					</div><!--/.col-->
+				</div><!-- /.row-->
+			</div><!-- /.container-->
 
-</body>
+		</section><!--/.welcome-hero-->
+		<!--welcome-hero end -->
+
+		<!--about start -->
+		<section id="about" class="about">
+			<div class="section-heading text-center">
+				<h2>about me</h2>
+			</div>
+			<div class="container">
+				<div class="about-content">
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="single-about-txt">
+								<h3>
+                  I am an active and sporty Professional Software Developer, seeking a career that fits my professional skills and interests.
+								</h3>
+								<p>
+									My working carreer started with a Java background. Throughout my experience i fell in love with web technologies and Rails. Wide experience in the IT, web and batch services maintainance and data manipulation.
+								</p>
+								<div class="row">
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>email</h3>
+											<p>nicolaos27@gmail.com</p>
+										</div>
+									</div>
+									<div class="col-sm-4">
+										<div class="single-about-add-info">
+											<h3>website</h3>
+											<p>nicolaosc.eu</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-offset-1 col-sm-5">
+							<div class="single-about-img">
+								<img src="assets/images/about/IMG_1123_web.JPG" alt="profile_image">
+								<div class="about-list-icon">
+									<ul>
+										<li>
+											<a href="http://www.twitter.com/nicolaosc">
+												<i  class="fa fa-twitter" aria-hidden="true"></i>
+											</a>
+
+										</li><!-- / li -->
+										<li>
+											<a href="http://www.linkedin.com/pub/nicol%C3%B2-calzavara/42/a45/451">
+												<i  class="fa fa-linkedin" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+										<li>
+											<a href="http://github.com/nicolaos">
+												<i  class="fa fa-github" aria-hidden="true"></i>
+											</a>
+										</li><!-- / li -->
+
+									</ul><!-- / ul -->
+								</div><!-- /.about-list-icon -->
+
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section><!--/.about-->
+		<!--about end -->
+
+		<!--education start -->
+		<section id="education" class="education">
+			<div class="section-heading text-center">
+				<h2>education</h2>
+			</div>
+			<div class="container">
+				<div class="education-horizontal-timeline">
+					<div class="row">
+            <div class="col-sm-3">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>01/2012</h2>
+									<h3>Esame di stato di abilitazione alla professione di Ingegnere</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Universita' degli studi di Padova
+										</h4>
+										<h5>Padua, Italy</h5>
+										<!-- <p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+										</p> -->
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>09/2008 - 03/2011</h2>
+									<h3>Laurea Magistrale in Ingegneria Informatica</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Universita' degli studi di Padova
+										</h4>
+										<h5>Padua, Italy</h5>
+										<!-- <p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+										</p> -->
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>09/2005 - 09/2008</h2>
+									<h3>Laurea triennale in Ingegneria Informatica</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											Universita' degli studi di Padova
+										</h4>
+										<h5>Padua, Italy</h5>
+										<!-- <p class="description">
+											Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.
+										</p> -->
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-horizontal-timeline">
+								<div class="experience-time">
+									<h2>09/2000 - 07/2005</h2>
+									<h3>Liceo Scientifico <br> PNI</h3>
+								</div><!--/.experience-time-->
+								<div class="timeline-horizontal-border">
+									<i class="fa fa-circle" aria-hidden="true"></i>
+									<span class="single-timeline-horizontal spacial-horizontal-line
+									"></span>
+								</div>
+								<div class="timeline">
+									<div class="timeline-content">
+										<h4 class="title">
+											I.I.S. Newton
+										</h4>
+										<h5>Camposampiero, Italy</h5>
+										<!-- <p class="description">
+											Liceo Scientifico PNI
+										</p> -->
+									</div><!--/.timeline-content-->
+								</div><!--/.timeline-->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</section><!--/.education-->
+		<!--education end -->
+
+		<!--skills start -->
+		<section id="skills" class="skills">
+				<div class="skill-content">
+					<div class="section-heading text-center">
+						<h2>skills</h2>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">Web development</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+
+												</div>
+											</div>
+											<h3>90%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Ruby / Rails</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
+
+											   </div>
+											</div>
+											<h3>80%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Javascript</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="10" aria-valuemax="100" style="">
+
+											   </div>
+											</div>
+											<h3>75%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+                  <div class="barWrapper">
+                    <span class="progressText">Java EE</span>
+                    <div class="single-progress-txt">
+                      <div class="progress ">
+                         <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="10" aria-valuemax="100" style="">
+
+                         </div>
+                      </div>
+                      <h3>85%</h3>
+                    </div>
+                  </div><!-- /.barWrapper -->
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="single-skill-content">
+									<div class="barWrapper">
+										<span class="progressText">Back End</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+												<div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="10" aria-valuemax="100" style="">
+
+												</div>
+											</div>
+											<h3>80%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Rest API</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+
+											   </div>
+											</div>
+											<h3>90%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">debian</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="10" aria-valuemax="100" style="">
+
+											   </div>
+											</div>
+											<h3>70%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+									<div class="barWrapper">
+										<span class="progressText">Unit testing</span>
+										<div class="single-progress-txt">
+											<div class="progress ">
+											   <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="10" aria-valuemax="100" style="">
+
+											   </div>
+											</div>
+											<h3>90%</h3>
+										</div>
+									</div><!-- /.barWrapper -->
+								</div>
+							</div>
+						</div><!-- /.row -->
+					</div>	<!-- /.container -->
+				</div><!-- /.skill-content-->
+
+		</section><!--/.skills-->
+		<!--skills end -->
+
+		<!--experience start -->
+		<section id="experience" class="experience">
+			<div class="section-heading text-center">
+				<h2>experience</h2>
+			</div>
+			<div class="container">
+				<div class="experience-content">
+						<div class="main-timeline">
+							<ul>
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>01/2018 - Present</h2>
+													<h3>JEE Developer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															Previnet S.p.A.
+														</h4>
+														<h5>Preganziol (TV), Italy</h5>
+														<p class="description">
+                              Development and maintenance of mainly backend services (batch and rest API) to manage the lifespan of insurance policies.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														11/2014 - 01/2018
+													</h2>
+													<h3>Ruby on Rails Developer, IT Operation</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															Magister Group: Ali s.p.a., Repas Lunch Coupon, Compagnia Dei Salari, Labor B.
+														</h4>
+														<h5>Cadoneghe (PD), Italy</h5>
+														<p class="description">
+                              Maintenance and development of new modules for the proprietary CRM for managing the HR recruitment.
+                              Analisys and development of a new CRM for the management of affiliates contracts for Repas.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														11/2014 - 01/2018
+													</h2>
+													<h3>Ruby on Rails Developer, IT Operation</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>09/2013 - 11/2014</h2>
+													<h3>AngularJS Developer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															Previnet S.p.A.
+														</h4>
+														<h5>Preganziol (TV), Italy</h5>
+														<p class="description">
+                              Development of batch processes to migrate out a managed insurance portfolio.
+                              Development of an innovative insurance frontend in AngularJS.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														06/2011 - 11/2014
+													</h2>
+													<h3>JEE DEVELOPER</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															Infocamere s.c.p.a.
+														</h4>
+														<h5>Padova (PD), Italy</h5>
+														<p class="description">
+                              Support for the development of web applications for the management, validation and integrity of data.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														06/2011 - 11/2014
+													</h2>
+													<h3>JEE Developer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+								<li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-5">
+												<div class="experience-time text-right">
+													<h2>06/2011 - 11/2014</h2>
+													<h3>JEE Developer</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5">
+												<div class="timeline">
+													<div class="timeline-content">
+														<h4 class="title">
+															<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+															IKS s.r.l.
+														</h4>
+														<h5>Padova (PD), Italy</h5>
+														<p class="description">
+                              Development of enterprise JEE applications on Jboss AS.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+                <li>
+									<div class="single-timeline-box fix">
+										<div class="row">
+											<div class="col-md-offset-1 col-md-5 experience-time-responsive">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														03/2011 - 06/2011
+													</h2>
+													<h3>Intern</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+											<div class="col-md-5">
+												<div class="timeline">
+													<div class="timeline-content text-right">
+														<h4 class="title">
+															Ne-t by Telerete Nordest s.r.l.
+														</h4>
+														<h5>Padova (PD), Italy</h5>
+														<p class="description">
+                              Internship for master thesis. Analisys and development of a draft for a multiplatform application with Phonegap framework. Development of a sample Android native app for purchasing bus tickets with SMS.
+														</p>
+													</div><!--/.timeline-content-->
+												</div><!--/.timeline-->
+											</div><!--/.col-->
+											<div class="col-md-offset-1 col-md-5 experience-time-main">
+												<div class="experience-time">
+													<h2>
+														<span><i class="fa fa-circle" aria-hidden="true"></i></span>
+														06/2011 - 11/2014
+													</h2>
+													<h3>Intern</h3>
+												</div><!--/.experience-time-->
+											</div><!--/.col-->
+										</div>
+									</div><!--/.single-timeline-box-->
+								</li>
+
+							</ul>
+						</div><!--.main-timeline-->
+					</div><!--.experience-content-->
+			</div>
+
+		</section><!--/.experience-->
+		<!--experience end -->
+
+		<!--contact start -->
+		<section id="contact" class="contact">
+			<div class="section-heading text-center">
+				<h2>contact me</h2>
+			</div>
+			<div class="container">
+				<div class="contact-content">
+					<div class="row">
+						<div class="col-md-offset-1 col-md-5 col-sm-6">
+							<div class="single-contact-box">
+								<div class="contact-adress">
+									<div class="contact-add-head">
+										<h3>Calzavara Nicolò</h3>
+										<p>Software Engineer</p>
+									</div>
+									<div class="contact-add-info">
+										<div class="single-contact-add-info">
+											<h3>email</h3>
+											<p>nicolaos27@gmail.com</p>
+										</div>
+										<div class="single-contact-add-info">
+											<h3>website</h3>
+											<p>nicolaosc.eu</p>
+										</div>
+									</div>
+								</div><!--/.contact-adress-->
+								<div class="hm-foot-icon">
+									<ul>
+										<li><a href="http://github.com/nicolaos"><i class="fa fa-github"></i></a></li><!--/li-->
+										<li><a href="http://www.twitter.com/nicolaosc"><i class="fa fa-twitter"></i></a></li><!--/li-->
+										<li><a href="http://www.linkedin.com/pub/nicol%C3%B2-calzavara/42/a45/451"><i class="fa fa-linkedin"></i></a></li><!--/li-->
+									</ul><!--/ul-->
+								</div><!--/.hm-foot-icon-->
+							</div><!--/.single-contact-box-->
+						</div><!--/.col-->
+					</div><!--/.row-->
+				</div><!--/.contact-content-->
+			</div><!--/.container-->
+
+		</section><!--/.contact-->
+		<!--contact end -->
+
+		<!--footer-copyright start-->
+		<footer id="footer-copyright" class="footer-copyright">
+			<div class="container">
+				<div class="hm-footer-copyright text-center">
+					<p>
+						&copy; copyright @nicolaosc design and developed by
+          <a href="https://www.themesine.com/">themesine</a>
+					</p><!--/p-->
+				</div><!--/.text-center-->
+			</div><!--/.container-->
+
+			<div id="scroll-Top">
+				<div class="return-to-top">
+					<i class="fa fa-angle-up " id="scroll-top" ></i>
+				</div>
+
+			</div><!--/.scroll-Top-->
+
+        </footer><!--/.footer-copyright-->
+		<!--footer-copyright end-->
+
+		<!-- Include all js compiled plugins (below), or include individual files as needed -->
+
+		<script src="assets/js/jquery.js"></script>
+
+        <!--modernizr.min.js-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+		<!--bootstrap.min.js-->
+        <script src="assets/js/bootstrap.min.js"></script>
+
+		<!-- bootsnav js -->
+		<script src="assets/js/bootsnav.js"></script>
+
+		<!-- jquery.sticky.js -->
+		<script src="assets/js/jquery.sticky.js"></script>
+
+		<!-- for progress bar start-->
+
+		<!-- progressbar js -->
+		<script src="assets/js/progressbar.js"></script>
+
+		<!-- appear js -->
+		<script src="assets/js/jquery.appear.js"></script>
+
+		<!-- for progress bar end -->
+
+		<!--owl.carousel.js-->
+        <script src="assets/js/owl.carousel.min.js"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+        <!--Custom JS-->
+        <script src="assets/js/custom.js"></script>
+
+    </body>
+
 </html>
